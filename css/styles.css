@@ -9,12 +9,14 @@
  }
  .grid-conteiner {
     display: grid;
-   /* grid-template-columns:1fr,1fr 1fr,1fr,1fr; LOS ANULE PORQUE NO SE APLICABAN CUANDO LOS ACTIVO. ME PODRIAN DECIR POR QUE NO FUNCIONAN?
-   grid-template-rows: 1fr,1fr; */
+    /* LOS ANULE PORQUE NO SE APLICABAN CUANDO LOS ACTIVO. ME PODRIAN DECIR POR QUE NO FUNCIONAN? */
+    /* grid-template-columns:1fr,1fr 1fr,1fr; 
+    grid-template-rows: 1fr,2fr; */
  
    grid-template-areas: 
-    "aside card card card card"
-    "aside card card card card" 
+    "card card card card"
+    "card card card card" 
+    "aside aside aside aside"
     
 }
 .aside {
@@ -29,23 +31,11 @@
     font-size: 2rem;
 
 }
-/* .card {grid-area: card;} */
-
-
-
-/* .card {
-    border: 2px solid #000000;
-    padding: 5%;
-    margin: 3%;
-    width: 5px;
-    height: 5px;
-    grid-area: card;
-} */
 
 .card {
     display: flex;
     width: 18rem;
-    height: 22rem;
+    height: 20rem;
     border: 2px solid violet;
     border-radius: 2px;
     background-color:#8a2be2 ;
@@ -54,6 +44,7 @@
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    /* grid-area: card; */
 
 }
 
@@ -297,14 +288,18 @@ h1{
         background-color: #DCCCA3;
        
        grid-template-areas: 
-        "card card"
-        "card card" 
-        "card card"
-        "card card"
-        /* "aside aside" */
+        "card"
+        "card"
+        "card"
+        "card"
+        "card"
+        "card"
+        "card"
+        "card"
+        "aside"
         
     }
-    /* .aside {grid-area: none;} */
+
     .navbar
 {
    width: 100%;
