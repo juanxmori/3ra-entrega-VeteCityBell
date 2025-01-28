@@ -90,6 +90,8 @@ h1{
     text-align: center;
     font-size: 2rem; /*em unidad relativa, al tamano del elemento padre. rem es relativo al tamano del elemento raiz*/
     color: #333333;
+    font-family: "Montserrat", serif;
+    font-weight: 300;
 }
 
 .titulo3 {
@@ -140,7 +142,14 @@ h1{
     font-size: 1.3rem;
     text-align: center;
 }
-
+.main-section-form p
+{
+    font-family: "Montserrat", serif;
+}
+.main-section-form h2
+{
+    margin: 1%;
+}
 .navbar
 {
    background-color: #8a2be2;
@@ -165,7 +174,9 @@ h1{
     padding: 15px 20px;
     display: block;
 }
-
+.contenedor-flex2 {
+    text-align: center;
+}
 
 
 
@@ -230,14 +241,11 @@ h1{
     .piedepagina u {
         font-size: 0.8rem;
     }
-    .formis {
+    .main-section-form {
         margin: 2rem;
     }
-    /* .titulo3 {
-        font-size: 1.2rem;
-    }*/
     .ttt {
-        /* height: 9rem; */
+        /* FOTOS TESTIMONIOS*/
         width: 80%;
     }
     .mapa {
@@ -250,6 +258,9 @@ h1{
 
 @media (max-width: 420px)
     {
+    .titulo2 {
+        font-size: 1.3rem;
+    }
 
     .foto{
         height: 20vh;
@@ -264,14 +275,16 @@ h1{
         width: 10rem;
  
     }
-    .formis {
+    .main-section-form {
         margin: 2rem;
         width: 20rem;
       
     }
-    .formis p 
+    .main-section-form p 
     {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+        
     }
   
     .ttt {
@@ -295,15 +308,15 @@ h1{
         "aside aside"
         
     }
-    /* .aside {grid-area: none;} */
+  
     .navbar
 {
    width: 100%;
 
 }
-.aside{
+/* .aside{
     display: none;
-}
+} */
     
 
     }
