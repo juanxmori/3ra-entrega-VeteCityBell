@@ -1,0 +1,318 @@
+/*Reset de Css: elimina los estilos por defecto*/
+
+* {
+    box-sizing: border-box;
+    margin: 0.5%;
+    padding: 0%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+ }
+ .grid-conteiner {
+    display: grid;
+   /* grid-template-columns:1fr,1fr 1fr,1fr,1fr; LOS ANULE PORQUE NO SE APLICABAN CUANDO LOS ACTIVO. ME PODRIAN DECIR POR QUE NO FUNCIONAN?
+   grid-template-rows: 1fr,1fr; */
+ 
+   grid-template-areas: 
+    "aside card card card card"
+    "aside card card card card" 
+    
+}
+.aside {
+    grid-area: aside;
+   
+}
+
+.aside li {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    font-size: 2rem;
+
+}
+/* .card {grid-area: card;} */
+
+
+
+/* .card {
+    border: 2px solid #000000;
+    padding: 5%;
+    margin: 3%;
+    width: 5px;
+    height: 5px;
+    grid-area: card;
+} */
+
+.card {
+    display: flex;
+    width: 18rem;
+    height: 22rem;
+    border: 2px solid violet;
+    border-radius: 2px;
+    background-color:#8a2be2 ;
+    margin: 20px;
+    padding: 10px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card img {
+    width: 250px;
+}
+
+.card h4{
+    color: #202020;
+}
+.card p{
+    color: #202020;
+    font-size: 1.5rem;
+    
+}
+.card button {
+    cursor: pointer;
+    font-size: 1rem;
+    width: 5rem;
+    height: 2rem;
+    
+}
+
+ /* Selector + Propiedad + valor */
+
+
+body{
+    background-color: #DCCCA3;
+}
+
+
+h1{
+    text-decoration: underline;
+    color: #8a2be2;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3rem; /*px unidad Absoluta*/
+    font-family:  "Playfair Display", serif; /*FUENTE IMPORTADA*/
+
+}
+
+.titulo2 {
+    text-align: center;
+    font-size: 2rem; /*em unidad relativa, al tamano del elemento padre. rem es relativo al tamano del elemento raiz*/
+    color: #333333;
+}
+
+.titulo3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333333;
+}
+
+.logo1 {
+    width: 200px;
+
+}
+
+.mapa {
+
+    width: 490px;
+
+}
+
+.piedepagina {
+    text-align: center;
+    color: #333333;
+}
+
+
+.foto {
+    height: 60vh;
+    width: 60%;
+    border-radius: 1%;
+}
+
+
+.portada { /*contenedor de imagenes principales*/
+    display: flex;
+    flex-flow: row nowrap; /*establece flow direction y flow wrap*/
+    justify-content: center; /*Horizontal*/
+    align-items:center ; /*Vertical*/
+    width: 100%;
+}
+
+.box-model {
+    width: 100%; /*ocupa el % del ancho del contenedor*/
+    height: 75px; /*VH*/
+    background-color: lightgray;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 0.5%;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.navbar
+{
+   background-color: #8a2be2;
+  
+
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li{
+    margin: 0 15px;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+
+
+
+/*desktop to mobile*/
+
+@media (max-width: 768px)
+    {
+    h1 {
+  
+    font-size: 1.8rem; /*px unidad Absoluta*/
+    
+    }
+    .titulo2 {
+        font-size: 1rem;
+    }
+
+    .foto{
+        height: 33vh;
+        width: 33%;
+        border-radius: 1%;
+    }
+
+    .aside li {
+        font-size: 1rem;
+    }
+    .card {
+        
+        width: 8rem;
+        height: 12rem;
+        border-radius: 1px;
+        margin: 10px;
+        padding: 5px;
+        /* padding-bottom: 2rem;
+        margin-bottom: 1rem; */
+          
+    }
+    
+    .card img {
+        width: 13vh;
+    }
+    h4 {
+        font-size: 0.8rem;
+    }
+    .card button {
+        font-size: 0.8rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+        /* font-weight: bold; */
+    }
+    .box-model {
+        width: 100%; /*ocupa el % del ancho del contenedor*/
+        height: 50px; /*VH*/
+        background-color: lightgray;
+        padding: 10px;
+        border: 5px solid black;
+        margin: 0.5%;
+        font-size: 1rem;
+        
+    }
+    .piedepagina u {
+        font-size: 0.8rem;
+    }
+    .formis {
+        margin: 2rem;
+    }
+    /* .titulo3 {
+        font-size: 1.2rem;
+    }*/
+    .ttt {
+        /* height: 9rem; */
+        width: 80%;
+    }
+    .mapa {
+        width: 25rem;
+    }
+    
+} 
+    
+  
+
+@media (max-width: 420px)
+    {
+
+    .foto{
+        height: 20vh;
+        width: 45%;
+        border-radius: 1%;
+       
+    }
+
+ 
+    .card {
+        
+        width: 10rem;
+ 
+    }
+    .formis {
+        margin: 2rem;
+        width: 20rem;
+      
+    }
+    .formis p 
+    {
+        font-size: 0.6rem;
+    }
+  
+    .ttt {
+        /* height: 9rem; */
+        width: 100%;
+    }
+    .mapa {
+        width: 25rem;
+    }
+    .grid-conteiner {
+        display: grid;
+       /* grid-template-columns:1fr,1fr 1fr,1fr,1fr; LOS ANULE PORQUE NO SE APLICABAN CUANDO LOS ACTIVO. ME PODRIAN DECIR POR QUE NO FUNCIONAN?
+       grid-template-rows: 1fr,1fr; */
+        background-color: #DCCCA3;
+       
+       grid-template-areas: 
+        "card card"
+        "card card" 
+        "card card"
+        "card card"
+        /* "aside aside" */
+        
+    }
+    /* .aside {grid-area: none;} */
+    .navbar
+{
+   width: 100%;
+
+}
+.aside{
+    display: none;
+}
+    
+
+    }
