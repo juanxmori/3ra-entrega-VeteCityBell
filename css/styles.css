@@ -288,18 +288,14 @@ h1{
         background-color: #DCCCA3;
        
        grid-template-areas: 
-        "card"
-        "card"
-        "card"
-        "card"
-        "card"
-        "card"
-        "card"
-        "card"
-        "aside"
+        "card card"
+        "card card" 
+        "card card"
+        "card card"
+        "aside aside"
         
     }
-
+    /* .aside {grid-area: none;} */
     .navbar
 {
    width: 100%;
