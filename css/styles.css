@@ -9,10 +9,7 @@
  }
  .grid-conteiner {
     display: grid;
-    /* LOS ANULE PORQUE NO SE APLICABAN CUANDO LOS ACTIVO. ME PODRIAN DECIR POR QUE NO FUNCIONAN? */
-    /* grid-template-columns:1fr,1fr 1fr,1fr; 
-    grid-template-rows: 1fr,2fr; */
- 
+
    grid-template-areas: 
     "card card card card"
     "card card card card" 
@@ -21,7 +18,6 @@
 }
 .aside {
     grid-area: aside;
-   
 }
 
 .aside ul li {
@@ -307,6 +303,13 @@ h1{
     }
     .mapa {
         width: 25rem;
+    }
+    .container-form-carousel {
+        flex-direction: column; /* Apila en pantallas pequeñas */
+    }
+    .carousel-container,
+    .main-section-form {
+        max-width: 100%; /* Permite que ocupen todo el ancho */
     }
     
 } 
