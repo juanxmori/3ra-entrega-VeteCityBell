@@ -25,13 +25,13 @@
     width: 100%;
     height: 100%;
     padding: 15px;
-    font-size: 2rem;
+    font-size: 3vh;
     background-color: #8a2be2;
     height: 4rem;
 }
 .aside ul p{
-    font-size: 1.2rem;
-    font-weight: 100;
+    font-size: 2.5vh;
+    font-weight: 0;
 }
 .btn-wap {
     position: fixed;
@@ -252,15 +252,16 @@ h1{
     {
     h1 {
   
-    font-size: 1.8rem; /*px unidad Absoluta*/
+    font-size: 4vh; /*px unidad Absoluta*/
     
     }
     .titulo2 {
-        font-size: 1rem;
+        font-size: 3vh;
     }
 
-    .aside li {
-        font-size: 1rem;
+    .aside ul li {
+        font-size: 2.5vh;
+        height: auto;
     }
     .card {
         
@@ -276,11 +277,11 @@ h1{
     /* .card img {
         width: 20vh;
     } */
-    h4 {
-        font-size: 1vw;
+    .card h4 {
+        font-size: 2.5vh;
     }
     .card button {
-        font-size: 1.2vw;
+        font-size: 2vh;
     }
     .box-model {
         width: 100%; /*ocupa el % del ancho del contenedor*/
@@ -339,11 +340,13 @@ h1{
     }
     .card {
         
-        width: 50%;
+        width: 80%;
+        height: auto;
  
     }
     .card h4 {
-        font-size: 1vw;
+        font-size: 3vh;
+        color: #fff;
     }
     .main-section-form {
         margin: 2%;
@@ -374,21 +377,27 @@ h1{
     }
     .grid-conteiner {
         display: grid;
+        justify-items: center;
         background-color: #DCCCA3;
        
         grid-template-areas: 
-        "card card"
-        "card card" 
-        "card card"
-        "card card"
-        "aside aside"
+        "card"
+        "card" 
+        "card"
+        "card"
+        "card"
+        "card" 
+        "card"
+        "card"
+        "aside"
         
     }
 
 .aside ul li {
     background-color: #8a2be2;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 3vh;
     text-align: center;
+    height: auto;
 }
     }
