@@ -1,0 +1,52 @@
+.grid-conteiner {
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    grid-template-areas: 
+    "card card card card" "card card card card" "aside aside aside aside";
+    &__card{
+        @include flex-jc-sa;
+        @include w-mw(90%, 300px);
+        height: auto;
+        border: 2px solid $lila;
+        border-radius: 2px;
+        background-color:$violet ;
+        margin: 20px;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        img {
+            @include w-mw(80%, 200px);
+        }
+        h4{
+            color: $white;
+            font-weight: 50;
+        }
+        button {
+            cursor: pointer;
+            font-size: 100%;
+            width: 50%;
+            height: auto;
+            margin-top: 2%;
+        }
+    }
+    &__aside {
+        grid-area: aside;
+        ul {
+            list-style: none;
+            li {
+                width: 100%;
+                height: 100%;
+                padding: 15px;
+                font-size: 3vh;
+                background-color: $violet;
+                color: #fff;
+                height: map-get($size-em, lg);
+            }
+            p{
+                font-size: 2.5vh;
+                font-weight: 0;
+            }
+        }
+    }
+}
