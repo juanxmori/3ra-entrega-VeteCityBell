@@ -12,13 +12,16 @@
 .image-container {
     display: inline-block; 
 }
-.container-form-carousel {
+.container-info-form {
     @include flex-jc-sa;
     flex-wrap: nowrap;
     align-items: center;
-    .main-section-form {  /*Form*/
+    .container-info-form_form-card {  /*Form*/
         flex: 1;
-        max-width: 600px;
+        background: #ffffff;
+        border: 1px solid #ddd;
+        max-width: 800px;
+        margin: auto;
         p{
             font-family: $title-sec; /*Font importada*/ 
         }
@@ -27,34 +30,35 @@
             font-size: 170% ;
             font-weight: 300;
         }
-        .form-card {
-            background: #ffffff;
-            border: 1px solid #dddddd;
-            max-width: 100%;
-            margin: auto;
+    }
+    .container-info-form_info {
+        flex: 1; 
+        max-width: 600px;
+        p{
+            font-family: "Montserrat", serif; /*Font importada*/ 
+        }
+        h2{
+            margin: 1%;
+            font-size: 170% ;
+            font-weight: 300;
         }
     }
-    .carousel-container { //Carrousel BSS
-        flex: 1;
-        max-width: 800px; 
-        min-width: 300px; /* Evita que se haga demasiado pequeño */
-        overflow: hidden; /* Evita que crezca inesperadamente */
-        img{
-            width: 100%; /* Asegura que las imágenes no se expandan */
-            height: auto; /* Mantiene la proporción */  
-        }
-        .carousel {
-            max-width: 600px; /* Evita que crezca más */
-            min-width: 300px;
-        }
+}
+.carousel-container { //Carrousel BSS
+    max-width: 800px; 
+    min-width: 300px; /* Evita que se haga demasiado pequeño */
+    overflow: hidden; /* Evita que crezca inesperadamente */
+    img{
+        width: 100%; /* Asegura que las imágenes no se expandan */
+        height: auto; /* Mantiene la proporción */  
+    }
+    .carousel {
+        max-width: 600px; /* Evita que crezca más */
+        min-width: 300px;
     }
 }
 .mapa {
-    @include w-mw(50%, 100%)
-}
-.mapa1{
-    width: 50%;
-    max-width: 100%;
+    @include w-mw(100%, 100%)
 }
 
 

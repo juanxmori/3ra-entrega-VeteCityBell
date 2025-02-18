@@ -207,52 +207,56 @@ body {
   display: inline-block;
 }
 
-.container-form-carousel {
+.container-info-form {
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
   align-items: center;
 }
-.container-form-carousel .main-section-form { /*Form*/
+.container-info-form .container-info-form_form-card { /*Form*/
   flex: 1;
-  max-width: 600px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  max-width: 800px;
+  margin: auto;
 }
-.container-form-carousel .main-section-form p {
+.container-info-form .container-info-form_form-card p {
   font-family: "Montserrat", serif; /*Font importada*/
 }
-.container-form-carousel .main-section-form h2 {
+.container-info-form .container-info-form_form-card h2 {
   margin: 1%;
   font-size: 170%;
   font-weight: 300;
 }
-.container-form-carousel .main-section-form .form-card {
-  background: #ffffff;
-  border: 1px solid #dddddd;
-  max-width: 100%;
-  margin: auto;
-}
-.container-form-carousel .carousel-container {
+.container-info-form .container-info-form_info {
   flex: 1;
+  max-width: 600px;
+}
+.container-info-form .container-info-form_info p {
+  font-family: "Montserrat", serif; /*Font importada*/
+}
+.container-info-form .container-info-form_info h2 {
+  margin: 1%;
+  font-size: 170%;
+  font-weight: 300;
+}
+
+.carousel-container {
   max-width: 800px;
   min-width: 300px; /* Evita que se haga demasiado pequeño */
   overflow: hidden; /* Evita que crezca inesperadamente */
 }
-.container-form-carousel .carousel-container img {
+.carousel-container img {
   width: 100%; /* Asegura que las imágenes no se expandan */
   height: auto; /* Mantiene la proporción */
 }
-.container-form-carousel .carousel-container .carousel {
+.carousel-container .carousel {
   max-width: 600px; /* Evita que crezca más */
   min-width: 300px;
 }
 
 .mapa {
-  width: 50%;
-  max-width: 100%;
-}
-
-.mapa1 {
-  width: 50%;
+  width: 100%;
   max-width: 100%;
 }
 
