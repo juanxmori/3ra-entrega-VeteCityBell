@@ -246,7 +246,7 @@ body {
   min-width: 300px; /* Evita que se haga demasiado pequeño */
   overflow: hidden; /* Evita que crezca inesperadamente */
 }
-.carousel-container img {
+.carousel-container .carousel-inner img {
   width: 100%; /* Asegura que las imágenes no se expandan */
   height: auto; /* Mantiene la proporción */
 }
@@ -294,27 +294,19 @@ body {
     margin: 0.5%;
     font-size: 1em;
   }
-  .container-form-carousel {
-    flex-direction: column; /* Apila en pantallas pequeñas */
+  .container-info-form {
+    flex-direction: column;
   }
-  .container-form-carousel .carousel-container,
-  .container-form-carousel .main-section-form {
-    max-width: 100%; /* Permite que ocupen todo el ancho */
-  }
-  .container-form-carousel .main-section-form {
+  .container-info-form .container-info-form_info {
+    max-width: 100%;
     margin: 2%;
   }
-  .container-form-carousel .main-section-form .form-card {
+  .container-info-form .container-info-form_form-card {
     flex-direction: column;
     text-align: center;
   }
-  .container-form-carousel .main-section-form .form-container {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-  }
-  .container-form-carousel .main-section-form .form-container input {
-    width: 100%;
+  .carousel-container {
+    max-width: 100%; /* Permite que ocupen todo el ancho */
   }
   .mapa {
     width: 25em;
@@ -351,11 +343,11 @@ body {
     text-align: center;
     height: auto;
   }
-  .main-section-form {
+  .container-info-form_info {
     margin: 2%;
     width: 200%;
   }
-  .main-section-form p {
+  .container-info-form_info p {
     font-size: 80%;
     margin-top: 2%;
   }

@@ -48,7 +48,7 @@
     max-width: 800px; 
     min-width: 300px; /* Evita que se haga demasiado pequeño */
     overflow: hidden; /* Evita que crezca inesperadamente */
-    img{
+    .carousel-inner img{
         width: 100%; /* Asegura que las imágenes no se expandan */
         height: auto; /* Mantiene la proporción */  
     }

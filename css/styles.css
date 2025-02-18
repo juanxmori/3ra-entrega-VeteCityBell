@@ -307,18 +307,22 @@ body{
     .piedepagina u {
         font-size: 0.8em;
     }
+    .container-info-form {
+        flex-direction: column; /* Apila en pantallas pequeñas */
+    }
     .container-info-form_info {
         margin: 2%;
     }
     .mapa {
         width: 25em;
     }
-    .container-info-form {
-        flex-direction: column; /* Apila en pantallas pequeñas */
-    }
     .carousel-container,
     .container-info-form_info {
         max-width: 100%; /* Permite que ocupen todo el ancho */
+    }
+    .container-info-form_form-card {
+        flex-direction: column;
+        text-align: center;
     }
     .grid-conteiner {
         display: grid;
@@ -337,10 +341,6 @@ body{
     }
     .animated-border {
         width: 100%; /* Ajusta el ancho de la imagen */}
-    .container-info-form_form-card {
-        flex-direction: column;
-        text-align: center;
-    }
     /* .mapa1{
         display: none;
     } */
