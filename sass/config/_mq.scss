@@ -41,30 +41,20 @@
     .piedepagina u {
         font-size: map-get($size-em, xss);;
     }
-    .container-form-carousel {
-        flex-direction: column; /* Apila en pantallas pequeñas */
-        .carousel-container,
-        .main-section-form {
-            max-width: 100%; /* Permite que ocupen todo el ancho */
-        }
-        .main-section-form {
-            .form-card {
-                flex-direction: column;
-                text-align: center;
-            }
-        
-            .form-container {
-                flex-direction: column;
-                width: 100%;
-                gap: 10px;
-            }
-        
-            .form-container input {
-                width: 100%;
-            }
+    .container-info-form {
+        flex-direction: column; 
+        .container-info-form_info {
+            max-width: 100%; 
             margin: 2%;
         }
+        .container-info-form_form-card {
+            flex-direction: column;
+            text-align: center;
+        }
              
+    }
+    .carousel-container{
+        max-width: 100%; /* Permite que ocupen todo el ancho */
     }
     .mapa {
         width: 25em;
@@ -109,7 +99,7 @@
             height: auto;
         }
     }
-    .main-section-form {
+    .container-info-form_info {
         margin: 2%;
         width: 200%;
         p{
