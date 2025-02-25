@@ -358,6 +358,9 @@ body {
   .mapa {
     width: 25em;
   }
+  .parasitos {
+    display: none;
+  }
 }
 * {
   box-sizing: border-box;
