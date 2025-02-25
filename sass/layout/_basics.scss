@@ -16,6 +16,13 @@
     @include flex-jc-sa;
     flex-wrap: nowrap;
     align-items: center;
+    .btn-jc{
+        background-color: $violet;
+        color: $white;
+    }
+    .btn-jc:hover{
+        background-color: #771772;
+    }
     .container-info-form_form-card {  /*Form*/
         flex: 1;
         background: #ffffff;

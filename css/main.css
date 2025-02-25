@@ -31,8 +31,10 @@
   cursor: pointer;
   font-size: 100%;
   width: 50%;
-  height: auto;
   margin-top: 2%;
+  background-color: #DCCCA3;
+  border: 2px solid #ee82ee;
+  border-radius: 10%;
 }
 .grid-conteiner__aside {
   grid-area: aside;
@@ -52,28 +54,6 @@
 .grid-conteiner__aside ul p {
   font-size: 2.5vh;
   font-weight: 0;
-}
-
-.navbar-custom {
-  background-color: #8a2be2;
-  width: 100%;
-  max-width: 100%;
-}
-.navbar-custom ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.navbar-custom li {
-  margin: 0 15px;
-}
-.navbar-custom a {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 15px 20px;
-  display: block;
-  font-size: 2vh;
 }
 
 body {
@@ -213,6 +193,13 @@ body {
   flex-wrap: nowrap;
   align-items: center;
 }
+.container-info-form .btn-jc {
+  background-color: #8a2be2;
+  color: #ffffff;
+}
+.container-info-form .btn-jc:hover {
+  background-color: #771772;
+}
 .container-info-form .container-info-form_form-card { /*Form*/
   flex: 1;
   background: #ffffff;
@@ -258,6 +245,15 @@ body {
 .mapa {
   width: 100%;
   max-width: 100%;
+}
+
+.navbar-jc {
+  background-color: #8a2be2;
+  max-width: 100%;
+}
+.navbar-jc a {
+  font-family: "Montserrat", serif;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -313,9 +309,6 @@ body {
   }
   .mapa1 {
     display: none;
-  }
-  .navbar-custom {
-    width: 100%;
   }
   .animated-border {
     width: 100%;

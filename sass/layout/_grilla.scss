@@ -26,8 +26,10 @@
             cursor: pointer;
             font-size: 100%;
             width: 50%;
-            height: auto;
             margin-top: 2%;
+            background-color: $camel;
+            border: 2px solid $lila;
+            border-radius: 10%;
         }
     }
     &__aside {

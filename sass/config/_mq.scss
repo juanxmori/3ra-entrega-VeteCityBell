@@ -62,13 +62,12 @@
     .mapa1{
         display: none;
     }
-    .navbar-custom {
-        width: 100%;
-    }
     .animated-border {
         @include w-mw(100%, 100%)
     }
+    
 }
+
 @media (max-width: 420px){
     .grid-conteiner {
         display: grid;
