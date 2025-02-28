@@ -32,7 +32,7 @@
   font-size: 100%;
   width: 50%;
   margin-top: 2%;
-  background-color: #DCCCA3;
+  background-color: #dccca3;
   border: 2px solid #ee82ee;
   border-radius: 10%;
 }
@@ -57,7 +57,7 @@
 }
 
 body {
-  background-color: #DCCCA3;
+  background-color: #dccca3;
 }
 
 .titulo1 {
@@ -130,7 +130,7 @@ body {
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  background-color: #25D366;
+  background-color: #25d366;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
@@ -144,7 +144,7 @@ body {
   background-color: #85fca9;
 }
 
-.footer-box-model {
+footer .footer-box-model {
   width: 100%; /*ocupa el % del ancho del contenedor*/
   height: 75px; /*VH*/
   background-color: #d3d3d3;
@@ -154,14 +154,23 @@ body {
   font-size: 1.3em;
   text-align: center;
 }
-
-.piedepagina {
+footer .piedepagina {
   text-align: center;
   color: #777777;
 }
-
-.contenedor-flex2 {
+footer .contenedor-flex2 {
   text-align: center;
+}
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+footer .social-media a {
+  display: inline;
+}
+footer .social-media a img {
+  width: 40px;
 }
 
 .animated-border {
@@ -200,7 +209,8 @@ body {
 .container-info-form .btn-jc:hover {
   background-color: #771772;
 }
-.container-info-form .container-info-form_form-card { /*Form*/
+.container-info-form .container-info-form_form-card {
+  /*Form*/
   flex: 1;
   background: #ffffff;
   border: 1px solid #ddd;
@@ -265,7 +275,7 @@ body {
   }
   .grid-conteiner {
     display: grid;
-    background-color: #DCCCA3;
+    background-color: #dccca3;
     grid-template-areas: "card card" "card card" "card card" "card card" "aside aside";
   }
   .grid-conteiner__card {
@@ -318,7 +328,7 @@ body {
 @media (max-width: 420px) {
   .grid-conteiner {
     display: grid;
-    background-color: #DCCCA3;
+    background-color: #dccca3;
     grid-template-areas: "card" "card" "card" "card" "card" "card" "card" "card" "aside";
   }
   .grid-conteiner__card {

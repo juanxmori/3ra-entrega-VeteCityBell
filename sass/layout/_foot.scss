@@ -1,5 +1,5 @@
-//footer
-.footer-box-model {
+footer {
+  .footer-box-model {
     width: 100%; /*ocupa el % del ancho del contenedor*/
     height: 75px; /*VH*/
     background-color: $kaki;
@@ -8,11 +8,23 @@
     margin: 0.5%;
     font-size: map-get($size-em, sm);
     text-align: center;
-}
-.piedepagina {
+  }
+  .piedepagina {
     text-align: center;
     color: $grey;
-}
-.contenedor-flex2 {
+  }
+  .contenedor-flex2 {
     text-align: center;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    a {
+      display: inline;
+      img {
+        width: 40px;
+      }
+    }
+  }
 }

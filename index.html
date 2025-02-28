@@ -1,72 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Veterinaria 24hs, City Bell, La Plata">
-    <meta name="keywords" content="Veterinaria, City Bell, Veterinaria 24hs, Veterinaria Canina, keywords">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Veterinaria 24hs, City Bell, La Plata" />
+    <meta
+      name="keywords"
+      content="Veterinaria, City Bell, Veterinaria 24hs, Veterinaria Canina, keywords"
+    />
+    <link rel="icon" href="./assets/sera.png" type="image/x-icon" />
     <title>Veterinaria City Bell</title>
     <!--BOOTSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!--aos-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--CSS-->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <!--FONT-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div >
-        <header>      <!--menu de nav, logo, carrusel-->        
-            <h1 class="titulo1 tracking-in-expand">VETERINARIA CITY BELL</h1>
-            <h2 class="titulo2">Abierto las 24hs</h2>
-            <nav class="navbar navbar-jc"> <!--menu de navegacion BSS-->
-                <div class="container-fluid"> 
-                    <a class="navbar-brand" href="./index.html">Inicio</a>
-                    <a class="navbar-brand" href="./html/servicios.html">Servicios</a>
-                    <a class="navbar-brand" href="./html/contacto.html">Contacto</a>
-                </div>
-            </nav>
-        </header>
-        <main><!--contenido principal-->
-            <section>
-                <div class="portada">
-                    <img class="portada__banner" src="./assets/banner.png" alt="banner">
-                    <img class="portada__bannermobile" src="./assets/LOGO VETE CB.png" alt="logo">   
-                </div>
-            </section>
-            <section>
-                <h2 class="titulo1 fs-1 mx-auto p-2 tracking-in-expand">Sobre Nosotros</h2>
-                <p class="fs-3 lh-lg text-wrap fw-medium text-center mx-auto p-2">Veterinaria City Bell es el lugar donde cuidamos a tu mascota como si fuera nuestra. Un emprendimiento familiar encabezado por dos jovenes veterinarios: Gustavo y Natalia. Dedicados 100% al cuidado animal. Equipados con tecnologia moderna para realizar todos los estudios que necesita tu mascota. Con los especialistas que estas buscando. Abierto las 24hs del dia. Domicilios, alimento balanceado, clinica general, plan sanitario y mucho mas! Consulta nuestra pagina de servicios.
-                Los esperamos! 
-                </p>
-            </section>
-            <section class="d-flex flex-row justify-content-center">
-                <div data-aos="flip-right"><img src="./assets/altas-temperaturas.jpg "  class="parasitos img-fluid rounded" alt="Altas Temperaturas"></div>
-                <div data-aos="flip-left"><img src="./assets/altas-temperaturas2.jpg"  class="parasitos img-fluid rounded" alt="Altas Temperaturas"></div>
-                <div data-aos="flip-up"><img src="./assets/altas-temperaturas3.jpg"  class="parasitos img-fluid rounded" alt="Altas Temperaturas"></div>
-                <div data-aos="flip-down"><img src="./assets/altas-temperaturas4.jpg"  class="parasitos img-fluid rounded" alt="Altas Temperaturas"></div>
-            </section>
-        </main>
-        <footer>
-            <a href="https://wa.me/2213641339"> <img src="./assets/whatsapp.png" alt="logo" class="btn-wap"></a>
-            <div class="footer-box-model">
-                <p>Encontranos en 471 Y 14C, City Bell</p>
-            </div>
-            <p class="piedepagina"><u>Somos la Clinica Veterinaria de City Bell</u></p>
-        </footer>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <header>
+        <!--menu de nav, logo, carrusel-->
+        <h1 class="titulo1 tracking-in-expand">VETERINARIA CITY BELL</h1>
+        <h2 class="titulo2">Abierto las 24hs</h2>
+        <nav class="navbar navbar-jc">
+          <!--menu de navegacion BSS-->
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Inicio</a>
+            <a class="navbar-brand" href="./html/servicios.html">Servicios</a>
+            <a class="navbar-brand" href="./html/contacto.html">Contacto</a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <!--contenido principal-->
+        <section>
+          <div class="portada">
+            <img
+              class="portada__banner"
+              src="./assets/banner.png"
+              alt="banner"
+            />
+            <img
+              class="portada__bannermobile"
+              src="./assets/LOGO VETE CB.png"
+              alt="logo"
+            />
+          </div>
+        </section>
+        <section class="container">
+          <h2 class="titulo1 fs-1 mx-auto p-2 tracking-in-expand">
+            Sobre Nosotros
+          </h2>
+          <p
+            class="fs-3 fs-md-4 fs-sm-5 lh-lg text-wrap text-center mx-auto p-2"
+          >
+            Veterinaria City Bell es el lugar donde cuidamos a tu mascota como
+            si fuera nuestra. Un emprendimiento familiar encabezado por dos
+            jovenes veterinarios: Gustavo y Natalia. Dedicados 100% al cuidado
+            animal. Equipados con tecnologia moderna para realizar todos los
+            estudios que necesita tu mascota. Con los especialistas que estas
+            buscando. Abierto las 24hs del dia. Domicilios, alimento balanceado,
+            clinica general, plan sanitario y mucho mas! Consulta nuestra pagina
+            de servicios. Los esperamos!
+          </p>
+        </section>
+        <section class="d-flex flex-row justify-content-center">
+          <div data-aos="flip-right">
+            <img
+              src="./assets/altas-temperaturas.jpg "
+              class="parasitos img-fluid rounded"
+              alt="Altas Temperaturas"
+            />
+          </div>
+          <div data-aos="flip-left">
+            <img
+              src="./assets/altas-temperaturas2.jpg"
+              class="parasitos img-fluid rounded"
+              alt="Altas Temperaturas"
+            />
+          </div>
+          <div data-aos="flip-up">
+            <img
+              src="./assets/altas-temperaturas3.jpg"
+              class="parasitos img-fluid rounded"
+              alt="Altas Temperaturas"
+            />
+          </div>
+          <div data-aos="flip-down">
+            <img
+              src="./assets/altas-temperaturas4.jpg"
+              class="parasitos img-fluid rounded"
+              alt="Altas Temperaturas"
+            />
+          </div>
+        </section>
+      </main>
+      <footer>
+        <a href="https://wa.me/2213641339">
+          <img src="./assets/whatsapp.png" alt="logo" class="btn-wap"
+        /></a>
+        <div class="footer-box-model">
+          <p>Encontranos en 471 Y 14C, City Bell</p>
+        </div>
+        <p class="piedepagina">
+          <u>Somos la Clinica Veterinaria de City Bell</u>
+        </p>
+        <div class="social-media">
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="./assets/facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="./assets/instagram.png" alt="Instagram" />
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+            <img src="./assets/twitter.png" alt="Twitter" />
+          </a>
+        </div>
+      </footer>
     </div>
     <!--aos-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-     <!--bss-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <!--bss-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

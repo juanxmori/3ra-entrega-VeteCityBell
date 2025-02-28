@@ -7,13 +7,12 @@ $small: 1em;
 $medium: 2em;
 $large: 3em;
 
-
 //map-get
-$size-em:(
-    xxs:0.8em,
-    xs: 1em,
-    sm: 1.3em,
-    md: 2em,
-    lg: 2.5em,
-    xl: 3em,
-)
+$size-em: (
+  xxs: 0.8em,
+  xs: 1em,
+  sm: 1.3em,
+  md: 2em,
+  lg: 2.5em,
+  xl: 3em,
+);

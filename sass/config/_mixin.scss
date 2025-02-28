@@ -1,22 +1,22 @@
 //con parametros (puedo definir que cambiar)
 
-@mixin w-mw($nombre1, $nombre2){
-    width: $nombre1;
-    max-width: $nombre2;
+@mixin w-mw($nombre1, $nombre2) {
+  width: $nombre1;
+  max-width: $nombre2;
 }
 
 //sin parametros (fragmento de codigo que se repite en nuestro proyeco. Reutilizable)
 
-@mixin flex-jc-ai{
-    display: flex;
-    justify-content: center;
-    align-items:center ;
+@mixin flex-jc-ai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-@mixin flex-jc-sa{
-    display: flex;
-    justify-content: space-around;
+@mixin flex-jc-sa {
+  display: flex;
+  justify-content: space-around;
 }
-@mixin flex-jc{
-    display: flex;
-    justify-content: center;
+@mixin flex-jc {
+  display: flex;
+  justify-content: center;
 }
