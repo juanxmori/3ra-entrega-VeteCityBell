@@ -30,13 +30,15 @@
     }
   }
   .footer-box-model {
-    width: 100%; /*ocupa el % del ancho del contenedor*/
-    height: 50px; /*VH*/
-    background-color: $kaki;
-    padding: 10px;
-    border: 5px solid $black;
-    margin: 0.5%;
-    font-size: map-get($size-em, xs);
+    p {
+      width: 100%; /*ocupa el % del ancho del contenedor*/
+      height: 50px; /*VH*/
+      background-color: $kaki;
+      padding: 10px;
+      border: 5px solid $black;
+      margin: 0.5%;
+      font-size: map-get($size-em, xs);
+    }
   }
   .piedepagina u {
     font-size: map-get($size-em, xss);
