@@ -144,7 +144,7 @@ body {
   background-color: #85fca9;
 }
 
-footer .footer-box-model {
+.footer-box-model {
   width: 100%; /*ocupa el % del ancho del contenedor*/
   height: 75px; /*VH*/
   background-color: #d3d3d3;
@@ -154,22 +154,28 @@ footer .footer-box-model {
   font-size: 1.3em;
   text-align: center;
 }
-footer .piedepagina {
+.footer-box-model p {
+  max-width: 100%;
+}
+
+.piedepagina {
   text-align: center;
   color: #777777;
 }
-footer .contenedor-flex2 {
+
+.contenedor-flex2 {
   text-align: center;
 }
-footer .social-media {
+
+.social-media {
   display: flex;
   justify-content: center;
   gap: 15px;
 }
-footer .social-media a {
+.social-media a {
   display: inline;
 }
-footer .social-media a img {
+.social-media a img {
   width: 40px;
 }
 
